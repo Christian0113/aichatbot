@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI 聊天网站</title>
+  <title>和陈大志聊天</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 40px auto;
       padding: 0 16px;
+    }
+    .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
     }
     h1 {
       text-align: center;
@@ -50,12 +55,13 @@
   </style>
 </head>
 <body>
-  <h1>AI 聊天网站</h1>
+  <img src="/images/logo.png" alt="logo" class="logo">
+  <h1>和陈大志聊天</h1>
 
   <div id="chatBox"></div>
 
   <div class="input-row">
-    <input id="messageInput" type="text" placeholder="输入你的问题..." />
+    <input id="messageInput" type="text" placeholder="请讲..." />
     <button onclick="sendMessage()">发送</button>
   </div>
 
@@ -78,7 +84,7 @@
       addMessage("user", message);
       messageInput.value = "";
 
-      addMessage("ai", "思考中...");
+      addMessage("陈大志", "我想想...");
 
       const aiLoading = chatBox.lastChild;
 
