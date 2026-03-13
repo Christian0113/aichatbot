@@ -98,9 +98,9 @@
         });
 
         const data = await res.json();
-        aiLoading.innerHTML = `<strong>AI：</strong>${data.reply}`;
+        aiLoading.innerHTML = `<strong>陈大志：</strong>${data.reply}`;
       } catch (err) {
-        aiLoading.innerHTML = `<strong>AI：</strong>请求失败，请稍后再试。`;
+        aiLoading.innerHTML = `<strong>陈大志：</strong>请求失败，请稍后再试。`;
       }
     }
 
